@@ -1,0 +1,11 @@
+test/
+examples/
+dist/
+NOTES
+package-lock.json
+target/
+.travis.yml
+API.md
+*.tgz
+coverage/
+docs/

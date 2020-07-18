@@ -1,0 +1,17 @@
+{
+    "name": "create-nollup-app",
+    "description": "CLI for quickly creating Nollup projects.",
+    "version": "0.0.1",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/PepsRyuu/create-nollup-app.git"
+    },
+    "homepage": "https://github.com/PepsRyuu/create-nollup-app",
+    "bin": {
+        "create-nollup-app": "./index.js"
+    },
+    "dependencies": {
+        "fs-extra": "^9.0.1"
+    }
+}
