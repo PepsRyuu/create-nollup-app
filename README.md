@@ -19,4 +19,6 @@ npx create-nollup-app --name my-app --template preact
 
 ## Available Templates
 
+* ```barebones``` - Empty project.
 * ```preact``` - https://preactjs.com/
+* ```react``` - https://reactjs.org/
