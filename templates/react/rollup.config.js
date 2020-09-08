@@ -7,18 +7,6 @@ import static_files from 'rollup-plugin-static-files';
 import { terser } from 'rollup-plugin-terser';
 import refresh from 'rollup-plugin-react-refresh';
 
-let env = function () {
-    return {
-        banner: `
-            let process = {
-                env: {
-                    NODE_ENV: ${JSON.stringify(process.env.NODE_ENV)}
-                }
-            };
-        `
-    }
-};
-
 let config = {
     input: './src/main.js',
     output: {
@@ -28,7 +16,6 @@ let config = {
         assetFileNames: '[name].[hash][extname]'
     },
     plugins: [
-        env(),
         hotcss({
             hot: process.env.NODE_ENV === 'development',
             filename: 'styles.css'
@@ -37,7 +24,11 @@ let config = {
             exclude: 'node_modules/**'
         }),
         node_resolve(),
-        commonjs(),
+        commonjs({
+            define: {
+                'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+            }
+        }),
         process.env.NODE_ENV === 'development' && refresh()
     ]
 }
