@@ -5,8 +5,8 @@
         "build": "npm run clean && rollup -c --environment NODE_ENV:production"
     },
     "devDependencies": {
-        "nollup": "^0.13.0",
-        "rollup": "^2.10.0",
+        "nollup": "^0.15.0",
+        "rollup": "^2.38.5",
         "rollup-plugin-node-resolve": "^5.2.0",
         "rollup-plugin-static-files": "0.0.1",
         "rollup-plugin-terser": "^5.1.1",

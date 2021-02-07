@@ -11,9 +11,9 @@
     "devDependencies": {
         "@babel/core": "^7.5.5",
         "@babel/preset-react": "^7.0.0",
-        "nollup": "^0.13.0",
+        "nollup": "^0.15.0",
         "react-refresh": "^0.4.2",
-        "rollup": "^2.26.11",
+        "rollup": "^2.38.5",
         "rollup-plugin-babel": "^4.3.3",
         "rollup-plugin-commonjs-alternate": "^0.6.1",
         "rollup-plugin-hot-css": "^0.2.1",
