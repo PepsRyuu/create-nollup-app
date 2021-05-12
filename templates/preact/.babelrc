@@ -1,5 +1,13 @@
 {
-    "presets": ["babel-preset-preact"],
+    "plugins": [
+        [
+            "@babel/plugin-transform-react-jsx",
+            {
+                "runtime": "automatic",
+                "importSource": "preact"
+            }
+        ]
+    ],
     "env": {
         "development": {
             "plugins": ["react-refresh/babel"]
