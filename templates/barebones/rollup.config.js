@@ -1,4 +1,4 @@
-import node_resolve from 'rollup-plugin-node-resolve';
+import node_resolve from '@rollup/plugin-node-resolve';
 import static_files from 'rollup-plugin-static-files';
 import { terser } from 'rollup-plugin-terser';
 
